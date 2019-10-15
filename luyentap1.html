@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap1</title>
+</head>
+<body>
+<script>
+    /*  bài 1
+    let spt = prompt('nhập số phần tử: ');
+    let a = [];
+    for(let i=0;i<spt;i++)
+    {
+        let add = Number(prompt('Nhập số : ' + i));
+        a.push(add);
+    }
+    let count =0;
+    let b = [];
+    for(let i=0;i<a.length;i++)
+    {
+        if(a[i]>=10)
+        {
+            b.push(a[i]);
+            count++;
+        }
+    }
+    document.write('Có ' + count + ' phần tử >= 10 là: ' + b + ',' );
+    */
+
+
+
+    /* bài 2
+    let a = [1,2,3,4,5,6,7,8,9,10];
+    let max = a[0];
+    index = 0;
+    for(let i=1;i<a.length;i++)
+    {
+        if(a[i]>max)
+        {
+           max = a[i];
+           index=i;
+        }
+    }
+    document.write('max: ' + max + ',' + ' ở vị trí: '  +index);
+     */
+
+    /* bài 3
+    let spt = prompt('Nhập số phần tử: ');
+    let a = [];
+    for(let i=0;i<spt;i++)
+    {
+        let add = Number(prompt('Nhập số thứ: ' + i));
+        a.push(add);
+    }
+    let max = a[0];
+    let b=0;
+    for(let i=0;i<a.length;i++)
+    {
+        b += a[i];
+        if(a[i]>max)
+        {
+            max = a[i];
+        }
+    }
+    document.write('Số lớn nhất là: ' + max +'<br>');
+    document.write('Trung bình các phần tử trong mảng là: ' + b/(a.length));
+     */
+
+    /* bài 4
+    let spt = prompt('Nhập số phần tử: ');
+    let a = [];
+    for(let i=0;i<spt;i++)
+    {
+        let add = Number(prompt('Nhập số thứ: ' + i));
+        a.push(add);
+    }
+    for (let i=0;i<a.length;i++)
+    {
+        document.write(a[i] + ',');
+    }
+    document.write('<br>' + a.reverse());
+     */
+
+    /* bài 5
+    let spt = prompt('nhập số phần tử: ');
+    let a = [];
+    for(let i=0;i<spt;i++)
+    {
+        let add = Number(prompt('Nhập số : ' + i));
+        a.push(add);
+    }
+    let count =0;
+    let b = [];
+    for(let i=0;i<a.length;i++)
+    {
+        if(a[i]<0)
+        {
+            b.push(a[i]);
+            count++;
+        }
+    }
+    document.write('Có ' + count + ' số nguyên âm là: ' + b + ',' );
+     */
+
+    /* bài 6
+    let spt = prompt('nhập số phần tử: ');
+    let a = [];
+    for(let i=0;i<spt;i++)
+    {
+        let add = Number(prompt('Nhập số : ' + i));
+        a.push(add);
+    }
+    let v = prompt('Nhập v :  ');
+    let check = false;
+    for( let i=0;i<a.length;i++)
+    {
+        if(v==a[i])
+        {
+            alert('V is in the a');
+            check=true;
+        }
+    }
+    if(!check)
+    {
+        alert('V not is in the a');
+    }
+     */
+
+
+
+    /* bài 7
+    let spt = prompt('nhập số phần tử: ');
+    let a = [];
+    for(let i=0;i<spt;i++)
+    {
+        let add = Number(prompt('Nhập số : ' + i));
+        a.push(add);
+    }
+    let v = prompt('Nhập v :  ');
+    for( let i=0;i<a.length;i++)
+    {
+        if (v == a[i])
+        {
+            index=i;
+            for(j=index;j<a.length;j++)
+            {
+                a[j]=a[j+1];
+            }
+            a[a.length-1]=0;
+        }
+    }
+    document.write('mảng mới: ' + a);
+     */
+
+    /* Bài 7
+    let spt = prompt('nhập số phần tử: ');
+    let a = [];
+    for(let i=0;i<spt;i++)
+    {
+        let add = Number(prompt('Nhập số : ' + i));
+        a.push(add);
+    }
+    a.sort(function (a,b) {
+        return b-a;
+    })
+    document.write('Thứ tự giảm dần của mảng: ' + a);
+     */
+
+    /* Bài 8
+    let spt = prompt('nhập số phần tử mảng a: ');
+    let a = [];
+    for(let i=0;i<spt;i++)
+    {
+        let add = Number(prompt('Nhập mảng a : ' + i));
+        a.push(add);
+    }
+    let spt1 = prompt('nhập số phần tử mảng b : ');
+    let b = [];
+    for(let i=0;i<spt1;i++)
+    {
+        let add1 = Number(prompt('Nhập mảng b : ' + i));
+        b.push(add1);
+    }
+    let c = a.concat(b);
+    document.write('mảng c: ' +c);
+     */
+</script>
+</body>
+</html>
